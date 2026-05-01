@@ -24,6 +24,19 @@ Focus only on insights that improve pattern recognition, problem-solving depth, 
 
 ---
 
+# OBSIDIAN COMPATIBILITY RULES (MANDATORY)
+
+* The YAML frontmatter block MUST start on line 1, column 1 with no blank lines,
+  spaces, or hidden characters before the opening `---`
+* YAML arrays MUST use block style (one item per line with `-` prefix).
+  NEVER use inline JSON-style arrays like `["a", "b"]`
+* All string values containing special characters MUST be quoted
+* The closing `---` of frontmatter must be followed immediately by the note body
+* Tags must use the hierarchical format `prefix/value` (no spaces, no quotes)
+* related_problems must use Obsidian wikilink format: `"[[Problem Name]]"`
+
+---
+
 # METADATA (MANDATORY)
 
 ```yaml id="mdt91k"
